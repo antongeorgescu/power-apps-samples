@@ -51,4 +51,4 @@ Ankh.NoLoad
 *.lnk
 *.url
 *.pbix
-
+dump/
