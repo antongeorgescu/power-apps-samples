@@ -11,7 +11,7 @@
 
 ### Installation Instructions
 1. Deploy LoanStarGlossaryApp by running an import in PowerApps Studio
-2. Deploy the following 3 flows by importing them from the .zip files they are packed in
+2. Deploy the following 3 flows by importing them from the .zip files they are packed in<br/>
 &nbsp;&nbsp;&nbsp;* LoanStarListReportFiles.zip<br/>
 &nbsp;&nbsp;&nbsp;* LoanStarReportExportToPdf.zip<br/>
 &nbsp;&nbsp;&nbsp;* LoanStarReportExportToCsv.zip<br/>
