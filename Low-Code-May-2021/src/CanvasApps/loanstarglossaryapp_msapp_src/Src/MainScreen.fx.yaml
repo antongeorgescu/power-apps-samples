@@ -1,0 +1,131 @@
+"MainScreen As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
+    Fill: =RGBA(215, 223, 240, 1)
+
+    RectQuickActionBar1 As rectangle:
+        Height: =64
+        Width: =Parent.Width
+        ZIndex: =1
+
+    "ReportList As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =Parent.Height - ReportList.Y
+        Items: =Table1_1
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =110
+        Width: =1366
+        Y: =64
+        ZIndex: =1
+
+        ReportName As label:
+            Height: =38
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =1059
+            X: =234
+            Y: =16
+            ZIndex: =1
+
+        Code As label:
+            FontWeight: =FontWeight.Bold
+            Height: =36
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ReportCode
+            VerticalAlign: =VerticalAlign.Top
+            Width: =182
+            X: =32
+            Y: =17
+            ZIndex: =2
+
+        Description As label:
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Description
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Code.Y + Code.Height + 4
+            ZIndex: =3
+
+        GoForward As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =47
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate(GlossaryReportTable,Fade)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =129
+            X: =1232
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Button2 As button:
+            Height: =43
+            OnSelect: =Navigate(GlossaryReportGallery,Fade)
+            Text: ="Gallery View"
+            Width: =134
+            X: =768
+            Y: =35
+            ZIndex: =6
+
+        Button3 As button:
+            Height: =43
+            OnSelect: =Navigate(GlossaryReportTable,Fade)
+            Text: ="Table View"
+            Width: =130
+            X: =943
+            Y: =35
+            ZIndex: =7
+
+        Button5 As button:
+            Height: =43
+            OnSelect: =Navigate(ReportListScreen,Fade)
+            Text: ="Reports"
+            Width: =130
+            X: =1112
+            Y: =38
+            ZIndex: =8
+
+    ReportsListTitle As label:
+        Align: =Align.Center
+        Height: =64
+        PaddingRight: =10
+        Size: =22
+        Text: ="Loan Star Business Reports"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    ReportsListTitle_1 As label:
+        Align: =Align.Center
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =64
+        PaddingRight: =10
+        Size: =22
+        Text: ="Powered by Power Apps"
+        Width: =Parent.Width
+        Y: =704
+        ZIndex: =3
+

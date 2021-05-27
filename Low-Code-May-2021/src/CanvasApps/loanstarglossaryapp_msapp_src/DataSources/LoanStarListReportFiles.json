@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "3b435673-3dfc-41f0-8919-15a070679a67",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "LoanStarListReportFiles",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]

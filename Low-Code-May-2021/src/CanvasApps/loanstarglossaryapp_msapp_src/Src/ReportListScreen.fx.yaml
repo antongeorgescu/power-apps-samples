@@ -1,0 +1,108 @@
+"ReportListScreen As screen.'tabletLayout_HeaderAndGallery_ver3.0'":
+    OnVisible: =White
+
+    RectQuickActionBar3 As rectangle:
+        Height: =64
+        Width: =Parent.Width
+        ZIndex: =1
+
+    "MyReportsGallery As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =385
+        Items: =myReports
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =98
+        Width: =1053
+        X: =282
+        Y: =79
+        ZIndex: =1
+
+        Title3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.name.Result
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.lastModified.Result
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title3.Y + Title3.Height + 4
+            ZIndex: =2
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    Title2 As label:
+        Align: =Align.Center
+        Height: =64
+        PaddingRight: =10
+        Text: ="List of Reports"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    GoBack_2 As arrow.backArrow:
+        Fill: =RGBA(241, 244, 249, 1)
+        OnSelect: =Navigate(MainScreen,Fade)
+        X: =41
+        Y: =7
+        ZIndex: =3
+
+    Button6 As button:
+        Height: =54
+        OnSelect: |-
+            =Set(Response,LoanStarListReportFiles.Run("PowerApps").reports);
+            UpdateContext({Var1:Response});
+            Clear(myReports);
+            ForAll(Split(Response,"/n"),Collect(myReports,{name:Last(FirstN(Split(Result,",").Result,2)),lastModified:Last(FirstN(Split(Result,",").Result,6))}));
+        Text: ="Load My Reports"
+        Width: =242
+        X: =28
+        Y: =96
+        ZIndex: =4
+
+    TextInput2 As text:
+        Default: =Var1
+        Height: =258
+        Mode: =TextMode.MultiLine
+        Width: =1295
+        X: =41
+        Y: =479
+        ZIndex: =6
+
+    Label3 As label:
+        Height: =48
+        Text: ="Raw Data (Flow)"
+        X: =39
+        Y: =429
+        ZIndex: =7
+
+    Button6_1 As button:
+        Height: =54
+        OnSelect: |
+            =Launch("https://studentlending-my.sharepoint.com/personal/anton_georgescu_studentlending_ca/_layouts/15/onedrive.aspx?sortField=LinkFilename&isAscending=true&id=%2Fpersonal%2Fanton%5Fgeorgescu%5Fstudentlending%5Fca%2FDocuments%2FPowerApps");
+        Text: ="Open Report Folder"
+        Width: =242
+        X: =28
+        Y: =180
+        ZIndex: =8
+

@@ -1,0 +1,68 @@
+ChooseFileName As screen:
+    Fill: =RGBA(215, 223, 240, 1)
+
+    Label4 As label:
+        Height: =62
+        Size: =18
+        Text: |-
+            ="Enter file name:"
+        Width: =292
+        X: =165
+        Y: =212
+        ZIndex: =1
+
+    txtFileName As text:
+        Default: =Concatenate("GlossaryOfTermsReport",Text(Now(),"mmddyyyyhhmmss"))
+        Height: =62
+        Size: =18
+        Width: =484
+        X: =438
+        Y: =212
+        ZIndex: =2
+
+    bnSubmitFileName As button:
+        Height: =60
+        OnSelect: |-
+            =Set(ExportCsvVar,"");
+            ForAll(GlossaryTermsList.AllItems,Collect(ExportCsvCollect,{Code:Code2.Text,Description:Description2.Text}));
+            Set(ExportCsvVar,Concat(ExportCsvCollect,Code&","&Description&Char(10)));
+            Set(SuccessVar,LoanStarReportExportToCsv_1.Run(txtFileName.Text,ExportCsvVar).completed);
+            //If(SuccessVar="true",Launch("https://studentlending-my.sharepoint.com/:x:/g/personal/anton_georgescu_studentlending_ca/EX0VEeernolHt08uLvzy3noBD5cXFL85G7VeIQJ18W2v2w?e=XD1A4r"));
+            Navigate(SuccessScreen,Fade);
+        Size: =18
+        Text: ="Submit"
+        Width: =232
+        X: =438
+        Y: =310
+        ZIndex: =3
+
+    Label5 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =18
+        Text: =".CSV"
+        Width: =98
+        X: =925
+        Y: =230
+        ZIndex: =4
+
+    Label6 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(56, 96, 178, 1)
+        Height: =58
+        Size: =20
+        Text: ="Select Report Name (CSV format)"
+        Width: =1366
+        ZIndex: =6
+
+    bnSubmitFileName_2 As button:
+        Height: =60
+        OnSelect: =Navigate(GlossaryReportGallery,Fade)
+        Size: =18
+        Text: ="Cancel"
+        Width: =232
+        X: =690
+        Y: =310
+        ZIndex: =7
+

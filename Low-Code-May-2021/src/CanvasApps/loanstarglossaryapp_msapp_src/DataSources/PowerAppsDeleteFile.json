@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "50efa2c4-d25d-438d-99bc-dfcc980694ea",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "PowerAppsDeleteFile",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]

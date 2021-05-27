@@ -1,0 +1,101 @@
+GlossaryReportTable As screen:
+    Fill: =RGBA(215, 223, 240, 1)
+
+    ButtonExportCsv As button:
+        Height: =43
+        OnSelect: =
+        Text: ="Export CSV"
+        Width: =207
+        X: =34
+        Y: =702
+        ZIndex: =2
+
+    GlossaryDataGrid As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        BorderThickness: =1
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =620
+        Items: =Table1
+        Width: =1320
+        X: =36
+        Y: =68
+        ZIndex: =3
+
+        Acronym As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Acronym"
+            FieldName: ="Acronym"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Acronym
+            Width: =166
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Definition As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Definition/Meaning "
+            FieldName: ="Definition/Meaning "
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Definition/Meaning '
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        Term As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Term "
+            FieldName: ="Term "
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.'Term '
+            Width: =366
+            X: =158
+            Y: =0
+            ZIndex: =8
+
+    Title As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =16
+        Text: ="Loan Star Glossary of Terms ver 1.0"
+        Width: =1315
+        X: =41
+        Y: =22
+        ZIndex: =4
+
+    ButtonExportPdf As button:
+        Height: =44
+        Text: ="Export PDF"
+        Width: =207
+        X: =262
+        Y: =702
+        ZIndex: =5
+
+    GoBack As arrow.backArrow:
+        OnSelect: =Navigate(MainScreen,Fade)
+        X: =41
+        Y: =7
+        ZIndex: =6
+
+    Dropdown1 As dropdown:
+        Height: =35
+        Items: =Table1
+        Width: =318
+        X: =1038
+        Y: =22
+        ZIndex: =7
+

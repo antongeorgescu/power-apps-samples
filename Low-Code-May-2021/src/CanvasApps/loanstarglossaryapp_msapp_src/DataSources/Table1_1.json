@@ -1,0 +1,18 @@
+[
+  {
+    "Data": "[{\"Description\":\"Define Loan Star Glossary of Terms\",\"Name\":\"Loan Star Glossary of Terms\",\"ReportCode\":\"GLOSS\"},{\"Description\":\"Define Loan Star success criteria\",\"Name\":\"Loan Star Success Criteria\",\"ReportCode\":\"CRIT\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "Table1_1",
+    "OrderedColumnNames": [
+      "ReportCode",
+      "Name",
+      "Description"
+    ],
+    "OriginalName": "Table1",
+    "OriginalSchema": "*[Description:s, Name:s, ReportCode:s]",
+    "Schema": "*[Description:s, Name:s, ReportCode:s]",
+    "Token": "dummyToken",
+    "Type": "StaticDataSourceInfo"
+  }
+]

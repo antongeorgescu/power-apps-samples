@@ -1,0 +1,13 @@
+Set(ExportCsvVar,"");
+ForAll(GlossaryTermsList.AllItems,Collect(ExportCsvCollect,{Code:Code2.Text,Description:Description2.Text}));
+Set(ExportCsvVar,Concat(ExportCsvCollect,Code&","&Description&Char(10)));
+Set(SuccessVar,LoanStarReportExportToCsv_1.Run("GlossaryTermsReport",ExportCsvVar).completed);
+If(SuccessVar="true",Launch("https://studentlending-my.sharepoint.com/:x:/g/personal/anton_georgescu_studentlending_ca/EX0VEeernolHt08uLvzy3noBD5cXFL85G7VeIQJ18W2v2w?e=XD1A4r"));
+
+Set(ExportHtmlVar,"<!DOCTYPE html><html><head><title>Loan Star Glossary of Terms</title></head><body><table>");
+Set(ExportHtmlVar,Concatenate(ExportHtmlVar,"<tr><th>Code</th><th>Description</th></tr>"));
+ForAll(GlossaryTermsList.AllItems,Collect(ExportPdfCollect,{Code2:Code2.Text,Description2:Description2.Text}));
+Set(ExportHtmlVar,Concatenate(ExportHtmlVar,Concat(ExportPdfCollect,"<tr><td>"&Code2&"</td><td>"&Description2&"</td></tr>")));
+Set(ExportHtmlVar,Concatenate(ExportHtmlVar,"</table></body></html>"));
+Set(SuccessVar2,LoanStarReportExportToPdf.Run("GlossaryTermsReport2",ExportHtmlVar).completed);
+If(SuccessVar2="true",Launch("https://studentlending-my.sharepoint.com/:b:/g/personal/anton_georgescu_studentlending_ca/ET6FUwclWx9Hg4G2HnnoRXIBBnAIDc4z7M_hRxnf4x3Ijw?e=pPXeW3"));

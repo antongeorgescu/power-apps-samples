@@ -1,0 +1,341 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "sl_fdabatchs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "sl_fdabatch",
+    "MaxGetRowsCount": 500,
+    "Name": "FDA Batches",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "bpf_sl_fdabatch_sl_fdaprocessflow": "FDA Process Flow",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "exchangerate": "Exchange Rate",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "organizationid": "Organization Id",
+      "overriddencreatedon": "Record Created On",
+      "processid": "Process Id",
+      "sl_adjustedpaymentcount": "Adjusted Payment Count",
+      "sl_adjustedpaymentcount_date": "Adjusted Payment Count (Last Updated On)",
+      "sl_adjustedpaymentcount_state": "Adjusted Payment Count (State)",
+      "sl_adjustedtotal": "Adjusted Total Amount",
+      "sl_adjustedtotal_base": "Adjusted Total (Base)",
+      "sl_adjustedtotal_date": "Adjusted Total Amount (Last Updated On)",
+      "sl_adjustedtotal_state": "Adjusted Total Amount (State)",
+      "sl_approvaldate": "Batch Approval Date",
+      "sl_batchcreateddate": "Batch Created Date",
+      "sl_batchfaa34approver": "Batch FAA34 Approver",
+      "sl_calrequisitionnumber": "CAL Requisition Number",
+      "sl_calresponsefilestatus": "CAL Response File Status",
+      "sl_calsubbatchstatus": "CAL Sub Batch Status",
+      "sl_csgprequisitionnumber": "CSGP Requisition Number",
+      "sl_csgpresponsefilestatus": "CSGP Response File Status",
+      "sl_cslsubbatchstatus": "CSL Sub Batch Status",
+      "sl_dlrequisitionnumber": "DL Requisition Number",
+      "sl_dlresponsefilestatus": "DL Response File Status",
+      "sl_faa33approval": "FAA33 Approval",
+      "sl_faa33approvalemail": "FAA33 Approval Email",
+      "sl_faa33approvalnotedby": "FAA33 Approval Noted By",
+      "sl_faa33approvalon": "FAA33 Approval On",
+      "sl_faa34approvalon": "FAA34 Approval On",
+      "sl_FAA34Approver": "FAA34 Approver",
+      "sl_faa34apprvaldone": "FAA34 Approval Done",
+      "sl_fdabatch_AsyncOperations": "System Jobs",
+      "sl_fdabatch_BulkDeleteFailures": "Bulk Delete Failures",
+      "sl_fdabatch_DuplicateBaseRecord": "Duplicate Records (sl_fdabatch_DuplicateBaseRecord)",
+      "sl_fdabatch_DuplicateMatchingRecord": "Duplicate Records (sl_fdabatch_DuplicateMatchingRecord)",
+      "sl_fdabatch_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "sl_fdabatch_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "sl_fdabatch_ProcessSession": "Process Sessions",
+      "sl_fdabatch_SyncErrors": "Sync Errors",
+      "sl_fdabatchid": "FDA Batch ID",
+      "sl_finaltotalamount": "Final Total Amount",
+      "sl_finaltotalamount_base": "Final Total Amount (Base)",
+      "sl_fiscalmonth": "Fiscal Month",
+      "sl_fiscalyear": "Fiscal Year",
+      "sl_name": "Batch ID",
+      "sl_originaltotal": "Original Total Amount- To be deleted",
+      "sl_originaltotal_base": "Original Total (Base) - To be deleted",
+      "sl_originaltotalamount": "Total Amount",
+      "sl_originaltotalamount_base": "Total Amount (Base)",
+      "sl_originaltotalamount_date": "Total Amount (Last Updated On)",
+      "sl_originaltotalamount_state": "Total Amount (State)",
+      "sl_paymentcountrollup": "Payment Count",
+      "sl_paymentcountrollup_date": "Payment Count (Last Updated On)",
+      "sl_paymentcountrollup_state": "Payment Count (State)",
+      "sl_preapprovaldone": "Preliminary Approval Done",
+      "sl_preliminaryapprovedon": "Preliminary Approved On",
+      "sl_PreliminaryApprover": "Preliminary Approver",
+      "sl_sl_fdabatch_sl_fdapayment_batchid": "FDA Payments",
+      "sl_startpaymentsdeferral": "StartPaymentsDeferral",
+      "sl_subbatchdeferalreason": "Sub Batch Deferal Reason",
+      "sl_workflowstatus": "Batch Workflow",
+      "stageid": "(Deprecated) Stage Id",
+      "statecode": "Status (statecode)",
+      "statuscode": "Status (statuscode)",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "transactioncurrencyid": "Currency",
+      "traversedpath": "(Deprecated) Traversed Path",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "FDA Batches",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "FDA Batches (Views)",
+    "Name": "_sl_fdabatch_views",
+    "RelatedEntityName": "FDA Batches",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3ddd6376-5855-454d-ae17-e5ba0eaf7a98": "Active FDA Batches",
+      "86973372-8488-4352-b7a3-0f17b6705ec4": "Inactive FDA Batches",
+      "b53f9c6d-8294-4c70-9705-f6a116a8954b": "FDA Batch Advanced Find View",
+      "ebdff844-8318-4903-afbd-ce3252ac4dd6": "FDA Batch Associated View",
+      "efc6d047-ed4a-47cc-9a38-e6161b0c61f6": "FDA Batch Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Deferal Reasons",
+    "Name": "sl_deferalreasons",
+    "OptionSetInfoNameMapping": {
+      "102690000": "System Outage",
+      "102690001": "Administrative Discretion"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_subbatchdeferalreason",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_subbatchdeferalreason",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "FAA33 Approval (FDA Batches)",
+    "Name": "sl_fdabatch_sl_faa33approval",
+    "OptionSetInfoNameMapping": {
+      "102690000": "Approved",
+      "102690001": "Refused"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_faa33approval",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_faa33approval",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "FAA33 Approval Email (FDA Batches)",
+    "Name": "sl_fdabatch_sl_faa33approvalemail",
+    "OptionSetInfoNameMapping": {
+      "102690000": "Attached",
+      "102690001": "Not Attached"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_faa33approvalemail",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_faa33approvalemail",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "FAA34 Approval Done (FDA Batches)",
+    "Name": "sl_fdabatch_sl_faa34apprvaldone",
+    "OptionSetInfoNameMapping": {
+      "102690000": "Yes"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_faa34apprvaldone",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_faa34apprvaldone",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Preliminary Approval Done (FDA Batches)",
+    "Name": "sl_fdabatch_sl_preapprovaldone",
+    "OptionSetInfoNameMapping": {
+      "102690000": "Yes"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_preapprovaldone",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_preapprovaldone",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Batch Workflow (FDA Batches)",
+    "Name": "sl_fdabatch_sl_workflowstatus",
+    "OptionSetInfoNameMapping": {
+      "102690000": "Pending FAA34 Approval",
+      "102690001": "Pending FAA33",
+      "102690002": "Awaiting Ressponse Files",
+      "102690003": "Response File Processed",
+      "102690004": "Workflow Ended"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_workflowstatus",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_workflowstatus",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (FDA Batches)",
+    "Name": "sl_fdabatch_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (FDA Batches)_1",
+    "Name": "sl_fdabatch_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Pending",
+      "102690000": "In Progress",
+      "102690001": "Deferred",
+      "102690002": "Approved",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SPSResponseOptionSet",
+    "Name": "sl_spsresponseoptionset",
+    "OptionSetInfoNameMapping": {
+      "102690000": "Not Processed",
+      "102690001": "Processed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_dlresponsefilestatus",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "sl_calresponsefilestatus",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      },
+      "OptionSetReferenceItem2": {
+        "OptionSetReferenceColumnName": "sl_csgpresponsefilestatus",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_dlresponsefilestatus",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "StartPaymentsDeferralOptionSet",
+    "Name": "sl_startpaymentsdeferraloptionset",
+    "OptionSetInfoNameMapping": {
+      "102690000": "Yes",
+      "102690001": "No"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_startpaymentsdeferral",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_startpaymentsdeferral",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SubBatchStatusOptionSet",
+    "Name": "sl_subbatchstatus",
+    "OptionSetInfoNameMapping": {
+      "102690000": "Defer",
+      "102690001": "Undefer"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "sl_calsubbatchstatus",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "sl_cslsubbatchstatus",
+        "OptionSetReferenceEntityName": "FDA Batches"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "sl_calsubbatchstatus",
+    "RelatedEntityName": "FDA Batches",
+    "Type": "OptionSetInfo"
+  }
+]

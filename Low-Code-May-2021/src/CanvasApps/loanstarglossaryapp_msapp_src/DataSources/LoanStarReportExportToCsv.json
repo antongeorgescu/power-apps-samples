@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "cc8d927d-ec29-4e62-a78e-acd7641e2c70",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "LoanStarReportExportToCsv",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]

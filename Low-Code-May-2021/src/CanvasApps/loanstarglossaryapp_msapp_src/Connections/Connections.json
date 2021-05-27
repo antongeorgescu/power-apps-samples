@@ -1,0 +1,227 @@
+{
+  "04389cec-6d42-4aad-8e51-70c2744ff7d6": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/67921518bdda43cba7e176183a400f16",
+    "connectionParameters": {
+      "sku": "Enterprise",
+      "workFlowCallbackUri": "https://prod-22.canadacentral.logic.azure.com:443/workflows/93419a98643f4a128ea04b1c66e747e0/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=x4hCwkjI4imqR562uz4_qeAxHHR34-QPF1BnzdhsqOk",
+      "workflowEndpoint": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31A83DF6B52246ACBCBE85C3D12E2232-87B4F4B2ACDD466390E1B519B5818887/providers/Microsoft.Logic/workflows/cc8d927d-ec29-4e62-a78e-acd7641e2c70",
+      "workflowName": "cc8d927d-ec29-4e62-a78e-acd7641e2c70",
+      "workflowPath": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31A83DF6B52246ACBCBE85C3D12E2232-87B4F4B2ACDD466390E1B519B5818887/providers/Microsoft.Logic/workflows/cc8d927d-ec29-4e62-a78e-acd7641e2c70"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1438/1.0.1438.2324/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "26205801-3717-48d3-91a5-8be3b1079c00": {
+          "value": "shared_dropbox"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "cc8d927d-ec29-4e62-a78e-acd7641e2c70"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "LoanStarReportExportToCsv_2",
+      "LoanStarReportExportToCsv"
+    ],
+    "dependencies": {
+      "shared_dropbox": "26205801-3717-48d3-91a5-8be3b1079c00"
+    },
+    "dependents": [],
+    "id": "04389cec-6d42-4aad-8e51-70c2744ff7d6"
+  },
+  "1f321b81-37a8-4756-a768-5eafbb8b1ba2": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/e215ce148dd24bb681ca7ac35c417bdb",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1473/1.0.1473.2431/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "363fd525-d6e1-48bf-a08a-7b466d1b2f17"
+    ],
+    "id": "1f321b81-37a8-4756-a768-5eafbb8b1ba2"
+  },
+  "26205801-3717-48d3-91a5-8be3b1079c00": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_dropbox/connections/0e141d374722444e9734975b35be98c1",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Dropbox",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1473/1.0.1473.2431/dropbox/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_dropbox",
+      "parameterHints": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "04389cec-6d42-4aad-8e51-70c2744ff7d6"
+    ],
+    "id": "26205801-3717-48d3-91a5-8be3b1079c00"
+  },
+  "363fd525-d6e1-48bf-a08a-7b466d1b2f17": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/50efa2c4d25d438d99bcdfcc980694ea-998bcb6af01d7121",
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-09.canadacentral.logic.azure.com:443/workflows/dd05fb55e1b447cc988e79dd137d5e49/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=IvNDgjG9AbeoUTmzghquqQlVB9ZgTCr-i-tIVPdJcik",
+      "workflowEndpoint": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31a83df6b52246acbcbe85c3d12e2232-87b4f4b2acdd466390e1b519b5818887/providers/Microsoft.Logic/workflows/50efa2c4-d25d-438d-99bc-dfcc980694ea",
+      "workflowName": "50efa2c4-d25d-438d-99bc-dfcc980694ea",
+      "workflowPath": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31a83df6b52246acbcbe85c3d12e2232-87b4f4b2acdd466390e1b519b5818887/providers/Microsoft.Logic/workflows/50efa2c4-d25d-438d-99bc-dfcc980694ea"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1438/1.0.1438.2324/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "1f321b81-37a8-4756-a768-5eafbb8b1ba2": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "50efa2c4-d25d-438d-99bc-dfcc980694ea"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppsDeleteFile"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness": "1f321b81-37a8-4756-a768-5eafbb8b1ba2"
+    },
+    "dependents": [],
+    "id": "363fd525-d6e1-48bf-a08a-7b466d1b2f17"
+  },
+  "66412da5-7999-469e-b141-472b0cd626b1": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/cc8d927dec294e62a78eacd7641e2c70-998bcb6af01d7121",
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-22.canadacentral.logic.azure.com:443/workflows/93419a98643f4a128ea04b1c66e747e0/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=x4hCwkjI4imqR562uz4_qeAxHHR34-QPF1BnzdhsqOk",
+      "workflowEndpoint": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31a83df6b52246acbcbe85c3d12e2232-87b4f4b2acdd466390e1b519b5818887/providers/Microsoft.Logic/workflows/cc8d927d-ec29-4e62-a78e-acd7641e2c70",
+      "workflowName": "cc8d927d-ec29-4e62-a78e-acd7641e2c70",
+      "workflowPath": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31a83df6b52246acbcbe85c3d12e2232-87b4f4b2acdd466390e1b519b5818887/providers/Microsoft.Logic/workflows/cc8d927d-ec29-4e62-a78e-acd7641e2c70"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1438/1.0.1438.2324/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "f42c5c32-6765-46fd-b76e-3566ec1aa1e0": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "cc8d927d-ec29-4e62-a78e-acd7641e2c70"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "LoanStarReportExportToCsv_1"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness": "f42c5c32-6765-46fd-b76e-3566ec1aa1e0"
+    },
+    "dependents": [],
+    "id": "66412da5-7999-469e-b141-472b0cd626b1"
+  },
+  "783b3d02-6250-461a-80b3-5acbfe2a4483": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/3b4356733dfc41f0891915a070679a67-998bcb6af01d7121",
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-09.canadacentral.logic.azure.com:443/workflows/4a2d2fc4c7ca4b6ebb8eb8f77877585a/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mIzUAtq5w1rDfcAmTfOp43rREsj3LnQQIz57pQIxhCs",
+      "workflowEndpoint": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31a83df6b52246acbcbe85c3d12e2232-87b4f4b2acdd466390e1b519b5818887/providers/Microsoft.Logic/workflows/3b435673-3dfc-41f0-8919-15a070679a67",
+      "workflowName": "3b435673-3dfc-41f0-8919-15a070679a67",
+      "workflowPath": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31a83df6b52246acbcbe85c3d12e2232-87b4f4b2acdd466390e1b519b5818887/providers/Microsoft.Logic/workflows/3b435673-3dfc-41f0-8919-15a070679a67"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1438/1.0.1438.2324/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "f42c5c32-6765-46fd-b76e-3566ec1aa1e0": {
+          "value": "shared_onedriveforbusiness_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3b435673-3dfc-41f0-8919-15a070679a67"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "LoanStarListReportFiles"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness_1": "f42c5c32-6765-46fd-b76e-3566ec1aa1e0"
+    },
+    "dependents": [],
+    "id": "783b3d02-6250-461a-80b3-5acbfe2a4483"
+  },
+  "f40a2440-12a7-4229-867a-1fdc48632135": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_logicflows/connections/4ce0270abfa74d9ca6879b266236e457-998bcb6af01d7121",
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-14.canadacentral.logic.azure.com:443/workflows/1da709927fe947ca83d4073e52fe7c5e/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=r_HP3ek_IjxgvERyfqaFP1L1UO8KVgCCbKeX8Z7LaHo",
+      "workflowEndpoint": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31a83df6b52246acbcbe85c3d12e2232-87b4f4b2acdd466390e1b519b5818887/providers/Microsoft.Logic/workflows/4ce0270a-bfa7-4d9c-a687-9b266236e457",
+      "workflowName": "4ce0270a-bfa7-4d9c-a687-9b266236e457",
+      "workflowPath": "/subscriptions/34eedfbf-3e33-475d-b510-23537fba3dc9/resourceGroups/31a83df6b52246acbcbe85c3d12e2232-87b4f4b2acdd466390e1b519b5818887/providers/Microsoft.Logic/workflows/4ce0270a-bfa7-4d9c-a687-9b266236e457"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1438/1.0.1438.2324/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "f42c5c32-6765-46fd-b76e-3566ec1aa1e0": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "4ce0270a-bfa7-4d9c-a687-9b266236e457"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "LoanStarReportExportToPdf"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness": "f42c5c32-6765-46fd-b76e-3566ec1aa1e0"
+    },
+    "dependents": [],
+    "id": "f40a2440-12a7-4229-867a-1fdc48632135"
+  },
+  "f42c5c32-6765-46fd-b76e-3566ec1aa1e0": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness/connections/shared-onedriveforbu-ef624111-e16c-4b8b-9f4b-4855-d26a3ab7",
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1473/1.0.1473.2431/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "f40a2440-12a7-4229-867a-1fdc48632135",
+      "66412da5-7999-469e-b141-472b0cd626b1",
+      "783b3d02-6250-461a-80b3-5acbfe2a4483"
+    ],
+    "id": "f42c5c32-6765-46fd-b76e-3566ec1aa1e0"
+  }
+}
